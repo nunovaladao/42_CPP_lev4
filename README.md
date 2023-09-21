@@ -4,7 +4,7 @@
 
 ## GRADE PROJECTS ✅
 - `CPP 00` -> 100/100 📋
-  - [**Subject CPP00**](https://github.com/nunovaladao/42_Philosophers_lev3/blob/main/extras/en.subject.pdf) 
+  - [**Subject CPP00**](https://github.com/nunovaladao/CPP_Modules/blob/main/CPP_00/extra/en.subject.pdf) 
 - `CPP 01` -> 0/100 📋
   - [**Subject CPP01**](https://github.com/nunovaladao/42_Philosophers_lev3/blob/main/extras/en.subject.pdf) 
 - `CPP 02` -> 0/100 📋
