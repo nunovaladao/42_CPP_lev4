@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 17:46:51 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/22 12:16:21 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/09/22 17:00:59 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,9 @@ class Contact
         void set_phone_number(std::string);
         std::string get_first_name();
         std::string get_last_name();
-        /* std::string get_nickname();
+        std::string get_nickname();
         std::string get_darckest_secret();
-        std::string get_phone_number(); */
+        std::string get_phone_number();
 };
 
 
