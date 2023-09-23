@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 17:46:51 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/22 17:00:59 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/09/23 14:36:49 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ class Contact
         std::string _first_name;
         std::string _last_name;
         std::string _nickname;
-        std::string _darkest_secret;
         std::string _phone_number;
+        std::string _darkest_secret;
 
     public:
 

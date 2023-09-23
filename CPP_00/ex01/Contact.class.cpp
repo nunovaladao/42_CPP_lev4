@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 17:50:22 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/22 20:18:33 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/09/23 14:37:51 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void Contact::set_darckest_secret(std::string ds)
 
 void Contact::set_phone_number(std::string pn)
 {
-    _darkest_secret = pn;
+    _phone_number = pn;
     return ;
 }
 
