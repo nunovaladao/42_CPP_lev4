@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 17:28:19 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/23 14:14:58 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/09/26 15:45:15 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Phonebook
 {
     private:
         Contact _contacts[8];
+        void get_contact(int);
+        
         int _i;
         int _len_list;
 
@@ -33,10 +35,9 @@ class Phonebook
         Phonebook();
         ~Phonebook();
 
-    void show_menu();
-    void add_contact();
-    void search_contact();
-    void get_contact(int);
+        void show_menu();
+        void add_contact();
+        void search_contact();
 
 };
 

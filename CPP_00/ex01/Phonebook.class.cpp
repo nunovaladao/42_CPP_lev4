@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 17:32:01 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/23 15:06:41 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/09/24 18:31:06 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,12 +85,14 @@ void Phonebook::search_contact()
         std::cout << "--------------------------------------------" << std::endl;
     }
     std::cout << std::endl;
-    std::cout << "Enter a contact index (Range: 1 - " << _len_list << "): ";
-    while (str.size() != 1 || str[0] - '0' > _len_list || str[0] <= '0')
+    while (true)
     {
-        if (see_spaces(str) || str[0] - '0' > _len_list || str[0] <= '0')
-            std::cout << "Try another contact index! This one doesn't exist...\n";
+        std::cout << "Enter a contact index (Range: 1 - " << _len_list << "): ";
         getline(std::cin, str);
+        int contactIndex = std::atoi(str.c_str());
+        if (contactIndex >= 1 && contactIndex <= _len_list)
+            break;
+        std::cout << "\nTry another contact index! This one doesn't exist...\n\n";
     }
     index = str[0] - '0' - 1;
     get_contact(index);
@@ -134,7 +136,8 @@ std::string trunc_str(std::string str)
 
     if (str.size() > 10)
     {
-        str = str.substr(0, 9);
+        //str = str.substr(0, 9);
+        str.resize(9);
         str = str += ".";
     }
     return str;
