@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 17:55:03 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/29 12:26:54 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/03 16:40:29 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,8 @@ int main(int ac, char **av)
     std::string s1 = av[2];
     std::string s2 = av[3];
 
-    std::ifstream file(filename); // fluxo de entrada de arquivo
+    std::ifstream file;
+    file.open(filename.c_str(), std::ios::in); // fluxo de entrada de arquivo
     if (!file.is_open())
     {
         std::cerr << "File error: "  << filename << std::endl;
@@ -42,7 +43,9 @@ int main(int ac, char **av)
     
     std::string file_replace;
     file_replace = filename.append(".replace");
-    std::ofstream file2(file_replace); // fluxo de saída de arquivo
+    
+    std::ofstream file2;
+    file2.open(file_replace.c_str(), std::ios::out); // fluxo de saída de arquivo
     if (!file2.is_open())
     {
         std::cerr << "File error: " << file_replace << std::endl;

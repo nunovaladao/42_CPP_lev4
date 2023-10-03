@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/26 21:34:30 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/27 16:54:41 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/03 15:53:24 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,5 @@ int main()
     std::cout << *stringPTR << std::endl;
     std::cout << stringREF << std::endl;
     
-
     return 0;
 }
