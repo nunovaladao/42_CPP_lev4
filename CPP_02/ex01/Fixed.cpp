@@ -6,12 +6,13 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:24:13 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/02 23:13:30 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/03 19:44:58 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
+// **************  Default Constructor  **************
 Fixed::Fixed() : _value(0)
 {
     std::cout << "Default constructor called" << std::endl;
@@ -19,6 +20,7 @@ Fixed::Fixed() : _value(0)
     return ;
 }
 
+// **************  Constructors  **************
 Fixed::Fixed(const int nb)
 {
     std::cout << "Int constructor called" << std::endl;
@@ -32,6 +34,7 @@ Fixed::Fixed(const float nb)
     _value = (int)(roundf(nb * (1 << _fractionalBits)));
 }
 
+// **************  Copy Constructor  **************
 Fixed::Fixed(Fixed const & src)
 {
     std::cout << "Copy constructor called" << std::endl;
@@ -40,6 +43,7 @@ Fixed::Fixed(Fixed const & src)
     return ;
 }
 
+// **************  Copy assignment Constructor  **************
 Fixed &Fixed::operator=(Fixed const &rhs)
 {
     std::cout << "Copy assignment operator called" << std::endl;
@@ -48,6 +52,7 @@ Fixed &Fixed::operator=(Fixed const &rhs)
     return *this;
 }
 
+// **************  Destructor  **************
 Fixed::~Fixed()
 {
     std::cout << "Destructor called" << std::endl;
@@ -55,6 +60,7 @@ Fixed::~Fixed()
     return ;
 }
 
+// **************  Member Functions  **************
 float Fixed::toFloat( void ) const
 {
     float value = (float)_value / (1 << _fractionalBits);
@@ -77,6 +83,7 @@ void Fixed::setRawBits( int const raw )
     _value = raw;
 }
 
+// **************  Operator  **************
 std::ostream &operator<<( std::ostream &o, Fixed const &rhs)
 {
     o << rhs.toFloat();
