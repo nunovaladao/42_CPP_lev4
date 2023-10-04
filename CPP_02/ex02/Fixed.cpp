@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:24:13 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/04 11:09:34 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/04 15:42:38 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,3 +106,18 @@ Fixed &Fixed::operator++() // pre-increment
     ++_value;
     return *this;
 }
+
+Fixed Fixed::operator--(int)
+{
+    Fixed temp(*this);
+
+    _value--;
+    return temp;
+}
+
+Fixed &Fixed::operator--()
+{
+    --_value;
+    return *this;
+}
+
