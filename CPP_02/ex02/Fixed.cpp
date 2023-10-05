@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:24:13 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/04 15:42:38 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/05 19:30:37 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,38 @@ void Fixed::setRawBits( int const raw )
     _value = raw;
 }
 
+Fixed &Fixed::max(Fixed &nbA, Fixed &nbB)
+{
+    if (nbA > nbB)
+        return nbA;
+    else
+        return nbB;
+}
+
+const Fixed &Fixed::max(Fixed const &nbA, Fixed const &nbB)
+{
+    if (nbA._value > nbB._value)
+        return nbA;
+    else
+        return nbB;
+}
+
+Fixed &Fixed::min(Fixed &nbA, Fixed &nbB)
+{
+    if (nbA < nbB)
+        return nbA;
+    else
+        return nbB;
+}
+
+const Fixed &Fixed::min(Fixed const &nbA, Fixed const &nbB)
+{
+    if (nbA._value < nbB._value)
+        return nbA;
+    else
+        return nbB;
+}
+
 // **************  Operator  **************
 
 std::ostream &operator<<( std::ostream &o, Fixed const &rhs)
@@ -92,6 +124,8 @@ std::ostream &operator<<( std::ostream &o, Fixed const &rhs)
     o << rhs.toFloat();
     return o;
 }
+
+// **************  Increment/Decrement  **************
 
 Fixed Fixed::operator++(int) // post-increment
 {
@@ -121,3 +155,56 @@ Fixed &Fixed::operator--()
     return *this;
 }
 
+// **************   Arithmetic Operators  **************
+
+Fixed Fixed::operator*(Fixed const &c) const
+{
+    return Fixed(this->toFloat() * c.toFloat());
+}
+
+Fixed Fixed::operator/(Fixed const &c) const
+{
+    return Fixed(this->toFloat() / c.toFloat());
+}
+
+Fixed Fixed::operator+(Fixed const &c) const
+{
+    return Fixed(this->toFloat() + c.toFloat());
+}
+
+Fixed Fixed::operator-(Fixed const &c) const
+{
+    return Fixed(this->toFloat() - c.toFloat());
+}
+
+// **************   Comparison Operators  **************
+
+bool Fixed::operator>(const Fixed &c) const
+{
+    return _value > c._value;
+}
+
+bool Fixed::operator<(const Fixed &c) const
+{
+    return _value < c._value;
+}
+
+bool Fixed::operator<=(Fixed const &c) const
+{
+    return _value <= c._value;
+}
+
+bool Fixed::operator>=(Fixed const &c) const
+{
+    return _value >= c._value;
+}
+
+bool Fixed::operator==(Fixed const &c) const
+{
+    return _value == c._value;
+}
+
+bool Fixed::operator!=(Fixed const &c) const
+{
+    return _value != c._value;
+}

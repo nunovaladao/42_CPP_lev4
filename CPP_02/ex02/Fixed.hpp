@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:24:08 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/04 15:44:39 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/05 19:30:33 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,10 +32,24 @@ class Fixed
         Fixed operator--(int);
         Fixed &operator--();
 
-        Fixed operator
+        bool operator>(Fixed const &c) const;
+        bool operator<(Fixed const &c) const;
+        bool operator<=(Fixed const &c) const;
+        bool operator>=(Fixed const &c) const;
+        bool operator==(Fixed const &c) const;
+        bool operator!=(Fixed const &c) const;
+
+        Fixed operator*(Fixed const &c) const;
+        Fixed operator/(Fixed const &c) const;
+        Fixed operator+(Fixed const &c) const;
+        Fixed operator-(Fixed const &c) const;
         
         Fixed &operator=(Fixed const &rhs);
 
+        static Fixed &max(Fixed &nbA, Fixed &nbB);
+        static Fixed &min(Fixed &nbA, Fixed &nbB);
+        static const Fixed &max(Fixed const &nbA, Fixed const &nbB);
+        static const Fixed &min(Fixed const &nbA, Fixed const &nbB);
         int getRawBits( void ) const;
         void setRawBits( int const raw );
         float toFloat( void ) const;
