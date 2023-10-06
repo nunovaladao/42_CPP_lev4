@@ -6,7 +6,7 @@
 #    By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/19 14:56:04 by nsoares-          #+#    #+#              #
-#    Updated: 2023/10/06 10:22:14 by nsoares-         ###   ########.fr        #
+#    Updated: 2023/10/06 12:27:44 by nsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ all: compilation_start $(NAME)
 
 $(NAME): $(OBJS_FILES)
 		$(CXX) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
-	@   $(FIXED_READY)
+	@   $(CLAPTRAP_READY)
 
 compilation_start:
 	@ $(COMPILATION_START)

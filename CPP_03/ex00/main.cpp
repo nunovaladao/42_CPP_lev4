@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 17:55:03 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/06 10:24:24 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/06 15:01:49 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,10 @@
 
 int main( void )
 {
-    ClapTrap ct("Clap");
+    ClapTrap ct("Dino");
+    //ct.attack("Hom");
+    ct.takeDamage(10);
+    ct.attack("Hom");
     
     return 0;
 }
