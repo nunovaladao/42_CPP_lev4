@@ -6,13 +6,13 @@
 #    By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/19 14:56:04 by nsoares-          #+#    #+#              #
-#    Updated: 2023/09/27 15:53:41 by nsoares-         ###   ########.fr        #
+#    Updated: 2023/10/06 11:37:27 by nsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = brain
 
-CC = c++
+CXX = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 #-fsanitize=address
 RM = rm -rf
 
@@ -48,7 +48,7 @@ RE          =   echo "\n$(BOLD_YELLOW)Re: $(NO_COLOR)Compilation restarted \n"
 all: compilation_start $(NAME)
 
 $(NAME): $(OBJS_FILES)
-		$(CC) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
+		$(CXX) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
 	@   $(BRAIN_READY)
 
 compilation_start:

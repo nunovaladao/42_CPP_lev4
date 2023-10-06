@@ -12,7 +12,7 @@
 
 NAME = account
 
-CC = c++
+CXX = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 #-fsanitize=address
 RM = rm -rf
 
@@ -47,7 +47,7 @@ RE          =   echo "\n$(BOLD_YELLOW)Re: $(NO_COLOR)Compilation restarted \n"
 all: compilation_start $(NAME)
 
 $(NAME): $(OBJS_FILES)
-		$(CC) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
+		$(CXX) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
 	@   $(ACCOUNT_READY)
 
 compilation_start:

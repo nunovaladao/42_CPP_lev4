@@ -6,11 +6,11 @@
 #    By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/19 14:56:04 by nsoares-          #+#    #+#              #
-#    Updated: 2023/09/19 19:45:15 by nsoares-         ###   ########.fr        #
+#    Updated: 2023/10/06 10:22:14 by nsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = clapTrap
 
 CXX = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 #-fsanitize=address
@@ -18,7 +18,8 @@ RM = rm -rf
 
 # _________SOURCES____________
 
-SOURCE_FILES = megaphone.cpp
+SOURCE_FILES = main.cpp \
+				ClapTrap.cpp \
 				
 
 OBJS_FILES = $(SOURCE_FILES:.cpp=.o)
@@ -34,7 +35,7 @@ NO_COLOR	=	\033[0m
 
 COMPILATION_START	=	echo "\n$(BOLD_YELLOW)Make: $(NO_COLOR)Compilation start...\n"
 
-MEGAPHONE_READY  =   echo "\n$(BOLD_YELLOW)Megaphone ready! ✅ \n"
+CLAPTRAP_READY  =   echo "\n$(BOLD_YELLOW)ClapTrap ready! ✅ \n"
 
 CLEANED		=	echo "\n$(BOLD_YELLOW)Clean: $(NO_COLOR)Removed all the \".o\" files \n"
 
@@ -48,7 +49,7 @@ all: compilation_start $(NAME)
 
 $(NAME): $(OBJS_FILES)
 		$(CXX) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
-	@   $(MEGAPHONE_READY)
+	@   $(FIXED_READY)
 
 compilation_start:
 	@ $(COMPILATION_START)

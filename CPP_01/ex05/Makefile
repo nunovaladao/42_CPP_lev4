@@ -6,13 +6,13 @@
 #    By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/19 14:56:04 by nsoares-          #+#    #+#              #
-#    Updated: 2023/09/28 21:10:55 by nsoares-         ###   ########.fr        #
+#    Updated: 2023/10/06 11:38:01 by nsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = harl
 
-CC = c++
+CXX = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 #-fsanitize=address
 RM = rm -rf
 
@@ -48,7 +48,7 @@ RE          =   echo "\n$(BOLD_YELLOW)Re: $(NO_COLOR)Compilation restarted \n"
 all: compilation_start $(NAME)
 
 $(NAME): $(OBJS_FILES)
-		$(CC) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
+		$(CXX) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
 	@   $(HARL_READY)
 
 compilation_start:

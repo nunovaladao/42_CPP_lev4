@@ -6,13 +6,13 @@
 #    By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/19 14:56:04 by nsoares-          #+#    #+#              #
-#    Updated: 2023/10/03 16:18:47 by nsoares-         ###   ########.fr        #
+#    Updated: 2023/10/06 11:37:40 by nsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = weapon
 
-CC = c++
+CXX = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 #-fsanitize=address
 RM = rm -rf
 
@@ -51,7 +51,7 @@ RE          =   echo "\n$(BOLD_YELLOW)Re: $(NO_COLOR)Compilation restarted \n"
 all: compilation_start $(NAME)
 
 $(NAME): $(OBJS_FILES)
-		$(CC) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
+		$(CXX) $(CFLAGS) $(SOURCE_FILES) -o $(NAME)
 	@   $(WEAPON_READY)
 
 compilation_start:
