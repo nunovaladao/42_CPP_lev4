@@ -6,50 +6,39 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/27 17:55:03 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/09 17:46:32 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/09 20:00:48 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ScavTrap.hpp"
 #include "ClapTrap.hpp"
 
 int main( void )
 {
-    ClapTrap ctA("Dino");
-    ClapTrap ctB;
-    ClapTrap ctC(ctA);
+    ScavTrap stA;
+    ScavTrap stB("Xico");
+    ScavTrap stC(stB);
 
-    ctA.attack("Hom");
-    ctA.setAttack(100);
-    ctA.attack("Hom");
-    ctA.setAttack(5);
-    ctA.attack("Hom");
+    stA.attack("Hom");
+    stA.beRepaired(12);
+    stA.takeDamage(100);
 
     std::cout << std::endl;
 
-    ctB.takeDamage(5);
-    ctB.beRepaired(5);
-    ctB.takeDamage(5);
-
+    stB.takeDamage(50);
+    stB.beRepaired(50);
+    stB.takeDamage(50);
+    stB.takeDamage(50);
+    
     std::cout << std::endl;
-    
-    /* ctC.attack("Xico");
-    ctC.setAttack(15);
-    ctC.attack("Xico");
-    ctC.attack("Xico");
-    ctC.attack("Xico");
-    ctC.takeDamage(6);
-    ctC.setAttack(1);
-    ctC.attack("Xico");
-    ctC.beRepaired(4);
-    ctC.attack("Xico");
-    ctC.attack("Xico");
-    ctC.attack("Xico");
-    ctC.attack("Xico");
-    ctC.attack("Xico");
-    ctC.takeDamage(7);
-    ctC.beRepaired(5);
-    ctC.takeDamage(2);
-    ctC.attack("Xico"); */
-    
+
+    stC.attack("James");
+    stC.takeDamage(60);
+    stC.guardGate();
+    stC.takeDamage(30);
+    stC.guardGate();
+    stC.takeDamage(10);
+    stC.guardGate();
+
     return 0;
 }

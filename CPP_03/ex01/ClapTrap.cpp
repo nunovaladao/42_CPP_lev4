@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 09:34:01 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/09 15:57:46 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/09 18:18:18 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,24 @@
 
 ClapTrap::ClapTrap() : _name("ClapT"), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
-    std::cout << "Default constructor called" << std::endl;
+    std::cout << _name << " ClapTrap Default constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
-    std::cout << "Constructor called" << std::endl;
+    std::cout << _name << " ClapTrap Constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const & src)
 {
-    std::cout << "Copy constructor called" << std::endl;
+    std::cout << src._name << " ClapTrap Copy constructor called" << std::endl;
 
     *this = src;
 }
 
 ClapTrap &ClapTrap::operator=(ClapTrap const &rhs)
 {
-    std::cout << "Copy assignment operator called" << std::endl;
+    std::cout << rhs._name << " ClapTrap Copy assignment operator called" << std::endl;
 
     if (this != &rhs)
     {
@@ -45,7 +45,7 @@ ClapTrap &ClapTrap::operator=(ClapTrap const &rhs)
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Destructor called" << std::endl;
+    std::cout << _name << " ClapTrap Destructor called" << std::endl;
 }
 
 void ClapTrap::setAttack(unsigned int attack)
@@ -93,10 +93,10 @@ void ClapTrap::beRepaired(unsigned int amount)
         std::cout << "ClapTrap " << _name << " don't have energy points!\n";
     else if (_hitPoints < 1)
         std::cout << "ClapTrap " << _name << " try to repair but is already dead!\n";
-    else if (amount + _hitPoints >= 10)
+    else if (amount + _hitPoints >= 100)
     {
         std::cout << "ClapTrap " << _name << " repair and have full health!\n";
-        _hitPoints = 10;
+        _hitPoints = 100;
         _energyPoints--;
     }
     else

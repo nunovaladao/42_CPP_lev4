@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 09:33:58 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/09 15:57:30 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/09 15:57:58 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class ClapTrap
 {
-    private:
+    protected:
     
         std::string _name;
         int _hitPoints;

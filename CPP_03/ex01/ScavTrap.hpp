@@ -1,42 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/06 09:33:58 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/09 15:57:30 by nsoares-         ###   ########.fr       */
+/*   Created: 2023/10/09 12:10:18 by nsoares-          #+#    #+#             */
+/*   Updated: 2023/10/09 20:04:09 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLAPTRAP_HPP
-#define CLAPTRAP_HPP
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
 
+#include "ClapTrap.hpp"
 #include <iostream>
 #include <string>
 
-class ClapTrap
+class ScavTrap : public ClapTrap
 {
-    private:
     
-        std::string _name;
-        int _hitPoints;
-        int _energyPoints;
-        int _attackDamage;
-
     public:
     
-        ClapTrap();
-        ClapTrap(std::string name);
-        ClapTrap(ClapTrap const &src);
-        ClapTrap &operator=(ClapTrap const &rhs);
-        ~ClapTrap();
+        ScavTrap();
+        ScavTrap(std::string name);
+        ScavTrap(ScavTrap const &src);
+        ScavTrap &operator=(ScavTrap const &rhs);
+        ~ScavTrap();
 
         void attack(const std::string& target);
-        void takeDamage(unsigned int amount);
-        void beRepaired(unsigned int amount);
-        void setAttack(unsigned int attack);
+        void guardGate();
    
 };
 
