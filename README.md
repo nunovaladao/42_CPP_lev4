@@ -10,9 +10,9 @@
 - `CPP 02` -> 0/100 📋
   - [**Subject CPP02**](https://github.com/nunovaladao/42_CPP_Modules/blob/main/CPP_02/extra/en.subject.pdf) 
 - `CPP 03` -> 0/100 📋
-  - [**Subject CPP03**](https://github.com/nunovaladao/42_Philosophers_lev3/blob/main/extras/en.subject.pdf) 
+  - [**Subject CPP03**](https://github.com/nunovaladao/42_CPP_Modules/blob/main/CPP_03/extra/en.subject.pdf) 
 - `CPP 04` -> 0/100 📋
-  - [**Subject CPP04**](https://github.com/nunovaladao/42_Philosophers_lev3/blob/main/extras/en.subject.pdf) 
+  - [**Subject CPP04**](https://github.com/nunovaladao/42_CPP_Modules/blob/main/CPP_04/extra/en.subject.pdf) 
 
 
 ## Useful links
