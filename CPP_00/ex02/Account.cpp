@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 16:39:36 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/26 15:02:54 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/10 11:15:17 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	Account::getNbWithdrawals( void )
 
 void	Account::_displayTimestamp( void )
 {
-    time_t currentTime = time(nullptr);
+    time_t currentTime = time(0);
     struct tm* localTime = localtime(&currentTime);
 
     // Formata a data e hora no formato desejado [YYYYMMDD_HHMMSS]
