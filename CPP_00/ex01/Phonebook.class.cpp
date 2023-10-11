@@ -89,6 +89,8 @@ void Phonebook::search_contact()
     {
         std::cout << "Enter a contact index (Range: 1 - " << _len_list << "): ";
         getline(std::cin, str);
+        if (std::cin.eof())
+        	exit(1);
         int contactIndex = std::atoi(str.c_str());
         if (contactIndex >= 1 && contactIndex <= _len_list)
             break;
@@ -110,6 +112,8 @@ std::string write_cmd(std::string str)
         std::cout << "Add a new contact (no empty fields)!\n" << std::endl;
         std::cout << str;
         getline(std::cin, cmd);
+        if (std::cin.eof())
+        	exit(1);
     }
     return rmv_spaces(cmd);
 }
