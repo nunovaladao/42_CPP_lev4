@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 16:45:32 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/09/23 09:22:06 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/03 11:37:59 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int main()
         system("clear");
         phonebook.show_menu();
         getline(std::cin, cmd);
+        if (std::cin.eof()) // CTRL-D
+            break ;
         if (cmd == "ADD")
             phonebook.add_contact();
         else if (cmd == "SEARCH")

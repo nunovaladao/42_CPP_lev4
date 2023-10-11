@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/25 16:39:36 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/10 11:15:17 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/03 12:00:12 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -146,4 +146,4 @@ int	Account::_totalNbDeposits = 0;
 int	Account::_totalNbWithdrawals = 0;
 
 // Comando para testar a diferença entre os 2 ficheiros log!
-//diff <(cut -c 18- x.log) <(cut -c 18- 19920104_091532.log) 
+//diff <(cut -c 18- x.log) <(cut -c 18- 19920104_091532.log)
