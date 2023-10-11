@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.cpp                                         :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/27 18:50:10 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/11 11:38:24 by nsoares-         ###   ########.fr       */
+/*   Created: 2023/10/10 16:06:13 by nsoares-          #+#    #+#             */
+/*   Updated: 2023/10/10 16:13:01 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "HumanA.hpp"
+#ifndef DOG_HPP
+#define DOG_HPP
 
-HumanA::HumanA(std::string name, Weapon &type) : _name(name), _type(type)
-{
-    
-}
+#include "Animal.hpp"
+#include <iostream>
+#include <string>
 
-HumanA::~HumanA()
+class Dog : public Animal
 {
-    
-}
 
-void HumanA::attack() const
-{
-    std::cout << _name <<  " attacks with their " << _type.getType() << std::endl;
-}
+    private:
+        std::string _type;
+
+    public:
+        Dog();
+        Dog(Dog const & src);
+        Dog &operator=(Dog const &rhs);
+        ~Dog();
+
+};
+
+#endif

@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:24:13 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/03 19:44:58 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/11 16:51:54 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 Fixed::Fixed() : _value(0)
 {
     std::cout << "Default constructor called" << std::endl;
-
     return ;
 }
 
@@ -24,6 +23,7 @@ Fixed::Fixed() : _value(0)
 Fixed::Fixed(const int nb)
 {
     std::cout << "Int constructor called" << std::endl;
+
     _value = nb * (1 << _fractionalBits);
 }
 
@@ -89,3 +89,18 @@ std::ostream &operator<<( std::ostream &o, Fixed const &rhs)
     o << rhs.toFloat();
     return o;
 }
+
+
+// Fixed Point
+
+/* 
+
+Um "fixed point" refere-se a um tipo de dado numérico que representa valores com uma parte inteira
+e uma parte fracionária fixa. 
+
+Semelhante aos floats, diferença: número de casas decimais fracionárias é fixo, o que significa que a precisão é predefinida. 
+
+Um "fixed point" é utilizado para uma representação exata de números com casas decimais fixas, como para 
+representar valores monetários. 
+
+*/
