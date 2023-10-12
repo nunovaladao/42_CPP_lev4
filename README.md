@@ -5,9 +5,9 @@
 ## GRADE PROJECTS ✅
 - `CPP 00` -> 100/100 📋
   - [**Subject CPP00**](https://github.com/nunovaladao/CPP_Modules/blob/main/CPP_00/extra/en.subject.pdf) 
-- `CPP 01` -> 0/100 📋
+- `CPP 01` -> 100/100 📋
   - [**Subject CPP01**](https://github.com/nunovaladao/42_CPP_Modules/blob/main/CPP_01/extra/en.subject.pdf) 
-- `CPP 02` -> 0/100 📋
+- `CPP 02` -> 80/100 📋
   - [**Subject CPP02**](https://github.com/nunovaladao/42_CPP_Modules/blob/main/CPP_02/extra/en.subject.pdf) 
 - `CPP 03` -> 0/100 📋
   - [**Subject CPP03**](https://github.com/nunovaladao/42_CPP_Modules/blob/main/CPP_03/extra/en.subject.pdf) 
