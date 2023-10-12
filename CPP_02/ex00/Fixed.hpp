@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 20:24:08 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/01 17:05:44 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/11 23:33:08 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-class Fixed
+class Fixed 
 {
 
     public:
