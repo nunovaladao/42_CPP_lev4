@@ -37,12 +37,12 @@ Animal::~Animal()
     std::cout << "Animal Destructor called" << std::endl;
 }
 
-std::string Animal::getType( void )
+std::string Animal::getType( void ) const
 {
     return _type;
 }
 
-void Animal::makeSound()
+void Animal::makeSound() const
 {
     std::cout << "Animal make a sound\n";
 }

@@ -26,10 +26,10 @@ class Animal
         Animal();
         Animal(Animal const & src);
         Animal &operator=(Animal const &rhs);
-        ~Animal();
+        virtual ~Animal();
 
-        std::string getType( void );
-        void makeSound();
+        std::string getType( void ) const;
+        virtual void makeSound() const;
 
 };
 

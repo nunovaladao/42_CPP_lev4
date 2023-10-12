@@ -20,14 +20,13 @@
 class Cat : public Animal
 {
 
-    private:
-        std::string _type;
-
     public:
         Cat();
         Cat(Cat const & src);
         Cat &operator=(Cat const &rhs);
         ~Cat();
+
+        void makeSound() const;
 
 };
 
