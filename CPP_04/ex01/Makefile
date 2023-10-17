@@ -6,7 +6,7 @@
 #    By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/19 14:56:04 by nsoares-          #+#    #+#              #
-#    Updated: 2023/10/13 15:54:18 by nsoares-         ###   ########.fr        #
+#    Updated: 2023/10/13 17:16:57 by nsoares-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ SOURCE_FILES = main.cpp \
 				Cat.cpp \
 				WrongAnimal.cpp \
 				WrongCat.cpp \
+				Brain.cpp \
 
 
 OBJS_FILES = $(SOURCE_FILES:.cpp=.o)
