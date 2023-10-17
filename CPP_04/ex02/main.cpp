@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:54:10 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/17 00:21:14 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/17 22:34:06 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ int main()
     for (int i = 0; i < 4; i++)
         i % 2 == 0 ? a[i] = new Dog() : a[i] = new Cat();
 
+    std::cout << std::endl << std::endl;
+    
     for (int i = 0; i < 4; i++)
     {
         std::cout << "Animal: " << a[i]->getType() << " -> ";
@@ -35,7 +37,7 @@ int main()
         std::cout <<  " | ";
     }
 
-    std::cout << std::endl;
+    std::cout << std::endl << std::endl;
 
     for (int i = 0; i < 4; i++)
         delete a[i];

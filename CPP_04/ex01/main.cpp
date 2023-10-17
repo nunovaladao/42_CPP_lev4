@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:54:10 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/16 20:16:43 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/17 22:29:50 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int main()
     {
         std::cout << "Animal: " << animal[i]->getType() << " -> ";
         animal[i]->printIdeas(i);
-        std::cout <<  " | ";
+        std::cout << " | ";
     }
     
     std::cout << "\n\n\n";

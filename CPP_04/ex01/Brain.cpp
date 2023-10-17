@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 17:08:28 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/16 17:10:13 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/17 22:30:27 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Brain::Brain()
 {
     std::cout << "Brain Default Constructor called" << std::endl;
     for (int i = 0; i < 100; i++)
-        ideas[i] = "Idea number: " + std::to_string(i);
+        ideas[i] = "random idea";
 }
 
 Brain::Brain(Brain const & src)
