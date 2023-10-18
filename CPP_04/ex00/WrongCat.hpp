@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 15:49:06 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/13 15:49:46 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/18 17:05:04 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include "WrongAnimal.hpp"
 #include <iostream>
-#include <string>
 
 class WrongCat : public WrongAnimal
 {

@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 16:06:13 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/16 23:54:13 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/18 17:45:08 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include "AAnimal.hpp"
 #include "Brain.hpp"
 #include <iostream>
-#include <string>
 
 class Dog : public AAnimal
 {

@@ -14,7 +14,6 @@
 #define AANIMAL_HPP
 
 #include <iostream>
-#include <string>
 
 class AAnimal
 {

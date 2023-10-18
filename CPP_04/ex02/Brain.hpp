@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 17:08:26 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/16 12:35:47 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/18 17:45:00 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define BRAIN_HPP
 
 #include <iostream>
-#include <string>
 
 class Brain
 {

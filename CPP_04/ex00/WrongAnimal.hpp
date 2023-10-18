@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 15:45:43 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/13 16:28:49 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/18 17:05:02 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define WRONG_ANIMAL_HPP
 
 #include <iostream>
-#include <string>
 
 class WrongAnimal
 {

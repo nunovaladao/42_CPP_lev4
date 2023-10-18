@@ -6,7 +6,7 @@
 /*   By: nsoares- <nsoares-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 15:54:41 by nsoares-          #+#    #+#             */
-/*   Updated: 2023/10/17 13:47:13 by nsoares-         ###   ########.fr       */
+/*   Updated: 2023/10/18 17:32:08 by nsoares-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define ANIMAL_HPP
 
 #include <iostream>
-#include <string>
 
 class Animal
 {
