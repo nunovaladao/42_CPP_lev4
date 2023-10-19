@@ -22,7 +22,8 @@ Cat::Cat() : AAnimal()
 Cat::Cat(Cat const & src) : AAnimal(src)
 {
     std::cout << "Cat Copy constructor called" << std::endl;
-
+    
+    //*this = src;
     _type = src._type;
     _brain = new Brain(*src._brain);
 }
@@ -33,7 +34,8 @@ Cat &Cat::operator=(Cat const &rhs)
     if (this != &rhs)
     {
         _type = rhs._type;
-        delete _brain;
+        if (_brain)
+            delete _brain;
         _brain = new Brain(*rhs._brain);
     }
     return *this;

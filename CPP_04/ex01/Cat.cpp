@@ -33,7 +33,8 @@ Cat &Cat::operator=(Cat const &rhs)
     if (this != &rhs)
     {
         _type = rhs._type;
-        delete _brain;
+        if (_brain)
+            delete _brain;
         _brain = new Brain(*rhs._brain);
     }
     return *this;
