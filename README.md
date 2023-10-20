@@ -1,7 +1,5 @@
 # C➕➕ Modules
 
-**In progress.. 🛠️**
-
 ## GRADE PROJECTS ✅
 - `CPP 00` -> 100/100 📋
   - [**Subject CPP00**](https://github.com/nunovaladao/CPP_Modules/blob/main/CPP_00/extra/en.subject.pdf) 
